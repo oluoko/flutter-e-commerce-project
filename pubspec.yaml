@@ -1,0 +1,162 @@
+name: e_store
+description: "A simple e-commerce application built with Flutter, showcasing product listings, a shopping cart, and user authentication, made for Android and iOS platforms."
+
+publish_to: 'none'
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.7
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+  iconsax: ^0.0.8
+  get: ^4.6.5
+  get_storage: ^2.1.1
+
+  # Utility Packages
+  http: ^1.1.0
+  intl: ^0.18.1
+  logger: ^2.0.1
+  url_launcher: ^6.1.12
+  flutter_native_splash: ^2.3.2
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
+  assets:
+    - assets/images/
+    - assets/icons/brands/
+    - assets/icons/categories/
+    - assets/icons/payment_methods/
+    - assets/logos/
+
+  fonts:
+    - family: Poppins
+      fonts:
+        - asset: assets/fonts/poppins/Poppins-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/poppins/Poppins-ThinItalic.ttf
+          weight: 100
+          style: italic
+
+        - asset: assets/fonts/poppins/Poppins-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/poppins/Poppins-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+
+        - asset: assets/fonts/poppins/Poppins-Light.ttf
+          weight: 300
+        - asset: assets/fonts/poppins/Poppins-LightItalic.ttf
+          weight: 300
+          style: italic
+
+        - asset: assets/fonts/poppins/Poppins-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/poppins/Poppins-Italic.ttf
+          weight: 400
+          style: italic
+
+        - asset: assets/fonts/poppins/Poppins-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/poppins/Poppins-MediumItalic.ttf
+          weight: 500
+          style: italic
+
+        - asset: assets/fonts/poppins/Poppins-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/poppins/Poppins-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+
+        - asset: assets/fonts/poppins/Poppins-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/poppins/Poppins-BoldItalic.ttf
+          weight: 700
+          style: italic
+
+        - asset: assets/fonts/poppins/Poppins-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/poppins/Poppins-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+
+        - asset: assets/fonts/poppins/Poppins-Black.ttf
+          weight: 900
+        - asset: assets/fonts/poppins/Poppins-BlackItalic.ttf
+          weight: 900
+          style: italic
+
+    - family: Urbanist
+      fonts:
+        - asset: assets/fonts/urbanist/Urbanist-Thin.ttf
+          weight: 100
+        - asset: assets/fonts/urbanist/Urbanist-ThinItalic.ttf
+          weight: 100
+          style: italic
+
+        - asset: assets/fonts/urbanist/Urbanist-ExtraLight.ttf
+          weight: 200
+        - asset: assets/fonts/urbanist/Urbanist-ExtraLightItalic.ttf
+          weight: 200
+          style: italic
+
+        - asset: assets/fonts/urbanist/Urbanist-Light.ttf
+          weight: 300
+        - asset: assets/fonts/urbanist/Urbanist-LightItalic.ttf
+          weight: 300
+          style: italic
+
+        - asset: assets/fonts/urbanist/Urbanist-Regular.ttf
+          weight: 400
+        - asset: assets/fonts/urbanist/Urbanist-Italic.ttf
+          weight: 400
+          style: italic
+
+        - asset: assets/fonts/urbanist/Urbanist-Medium.ttf
+          weight: 500
+        - asset: assets/fonts/urbanist/Urbanist-MediumItalic.ttf
+          weight: 500
+          style: italic
+
+        - asset: assets/fonts/urbanist/Urbanist-SemiBold.ttf
+          weight: 600
+        - asset: assets/fonts/urbanist/Urbanist-SemiBoldItalic.ttf
+          weight: 600
+          style: italic
+
+        - asset: assets/fonts/urbanist/Urbanist-Bold.ttf
+          weight: 700
+        - asset: assets/fonts/urbanist/Urbanist-BoldItalic.ttf
+          weight: 700
+          style: italic
+
+        - asset: assets/fonts/urbanist/Urbanist-ExtraBold.ttf
+          weight: 800
+        - asset: assets/fonts/urbanist/Urbanist-ExtraBoldItalic.ttf
+          weight: 800
+          style: italic
+
+        - asset: assets/fonts/urbanist/Urbanist-Black.ttf
+          weight: 900
+        - asset: assets/fonts/urbanist/Urbanist-BlackItalic.ttf
+          weight: 900
+          style: italic
+
+    - family: Coolvetica
+      fonts:
+        - asset: assets/fonts/coolvetica/Coolvetica.ttf
+          weight: 400
+        - asset: assets/fonts/coolvetica/Coolvetica-Condensed.ttf
+          weight: 500
+        - asset: assets/fonts/coolvetica/Coolvetica-Compressed.ttf
+          weight: 600
+        - asset: assets/fonts/coolvetica/Coolvetica-Crammed.ttf
+          weight: 700
