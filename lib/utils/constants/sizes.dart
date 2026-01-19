@@ -1,3 +1,5 @@
+import 'package:flutter/cupertino.dart';
+
 class TSizes {
   // Padding and margin sizes
   static const double xs = 4.0;
@@ -66,4 +68,13 @@ class TSizes {
 
   // Grid view spacing
   static const double gridViewSpacing = 16.0;
+}
+
+class TSpacingStyle {
+  static const EdgeInsetsGeometry paddingWithAppBarHeight = EdgeInsets.only(
+    top: TSizes.appBarHeight,
+    left: TSizes.defaultSpace,
+    bottom: TSizes.defaultSpace,
+    right: TSizes.defaultSpace,
+  );
 }
