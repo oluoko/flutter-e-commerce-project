@@ -1,12 +1,13 @@
 import 'package:e_store/features/screens/password_config/forgot_password.dart';
 import 'package:e_store/features/screens/signup/signup.dart';
 import 'package:e_store/navigation_menu.dart';
+import 'package:e_store/utils/constants/sizes.dart';
+import 'package:e_store/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:get/get.dart';
 
-import '../../../../utils/constants/sizes.dart';
-import '../../../../utils/constants/text_strings.dart';
+
 
 class LoginForm extends StatelessWidget {
   const LoginForm({super.key});

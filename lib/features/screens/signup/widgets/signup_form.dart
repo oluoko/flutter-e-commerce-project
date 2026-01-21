@@ -1,11 +1,11 @@
 import 'package:e_store/features/screens/signup/verify_email.dart';
 import 'package:e_store/features/screens/signup/widgets/term_and_conditions_checkbox.dart';
+import 'package:e_store/utils/constants/sizes.dart';
+import 'package:e_store/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
 import 'package:get/get.dart';
 
-import '../../../../utils/constants/sizes.dart';
-import '../../../../utils/constants/text_strings.dart';
 
 class SignupForm extends StatelessWidget {
   const SignupForm({super.key});

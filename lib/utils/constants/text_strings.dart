@@ -1,5 +1,3 @@
-import 'package:flutter/material.dart';
-
 class TTexts {
   // GLOBAL Text
   static const String tNo = "No";
@@ -24,16 +22,16 @@ class TTexts {
   static const String tFullName = "Full Name";
   static const String tGetStarted = "Get Started";
   static const String tForgetPassword = "Forget Password?";
-  static const String changeYourPasswordTitle= "Password Reset Email Sent";
-  static const String changeYourPasswordSubTitle = "Your account security is our priority! We've sent you a secure link to safely change your password and keep your account protected";
-  static const String homeAppbarSubTitle = "Coding With T";
+  static const String changeYourPasswordTitle = "Password Reset Email Sent";
+  static const String changeYourPasswordSubTitle =
+      "Your account security is our priority! We've sent you a secure link to safely change your password and keep your account protected";
+  static const String homeAppbarSubTitle = "Developed by Brain Wrestle";
   static const String tSignInWithGoogle = "Sign-In with Google";
   static const String firstName = "First Name";
   static const String lastName = "Last Name";
   static const String userName = "Username";
   static const String phoneNumber = "Phone Number";
   static const String tConfirmPassword = "Confirm Password";
-
 
   //  Validation
   static const String tEmailCannotEmpty = "Email cannot be empty";

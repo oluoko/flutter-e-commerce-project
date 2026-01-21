@@ -1,12 +1,11 @@
-import 'package:e_store/common/screens/success_screen.dart';
 import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
+import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 
-import '../../../utils/helpers/helper_functions.dart';
 
 class ResetPassword extends StatelessWidget {
   const ResetPassword({super.key});

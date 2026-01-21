@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-import '../../utils/constants/colors.dart';
-import '../../utils/helpers/helper_functions.dart';
+import 'package:e_store/utils/constants/colors.dart';
+import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'circular_container.dart';
 import 'curved_edge_widget.dart';
 
@@ -40,6 +40,7 @@ class PrimaryHeaderContainer extends StatelessWidget {
                   backgroundColor: TColors.white.withOpacity(0.1),
                 ),
               ),
+              child,
             ],
           ),
         ),

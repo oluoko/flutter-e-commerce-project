@@ -1,10 +1,10 @@
+import 'package:e_store/common/widgets/form_divider.dart';
+import 'package:e_store/common/widgets/social_buttons.dart';
 import 'package:e_store/features/screens/login/widgets/login_form.dart';
 import 'package:e_store/features/screens/login/widgets/login_header.dart';
+import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
-import '../../../common/widgets/form_divider.dart';
-import '../../../common/widgets/social_buttons.dart';
-import '../../../utils/constants/sizes.dart';
 
 class LoginScreen extends StatelessWidget {
   const LoginScreen({super.key});

@@ -2,8 +2,8 @@ import 'package:e_store/utils/constants/sizes.dart';
 import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 
-import '../../utils/constants/text_strings.dart';
-import '../../utils/helpers/helper_functions.dart';
+import 'package:e_store/utils/constants/text_strings.dart';
+import 'package:e_store/utils/helpers/helper_functions.dart';
 
 class SuccessScreen extends StatelessWidget {
   const SuccessScreen({
