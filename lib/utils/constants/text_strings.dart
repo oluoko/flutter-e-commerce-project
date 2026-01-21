@@ -58,6 +58,7 @@ class TTexts {
   static const String tResetPassword = "Reset Password";
   static const String tOR = "OR";
   static const String tOrSignInWith = "Or Sign In With";
+  static const String tOrSignUpWith = "Or Sign Up With";
   static const String tConnectWith = "Connect With";
   static const String tFacebook = "Facebook";
   static const String tPhoneNumber = "Phone Number";
@@ -179,4 +180,5 @@ class TTexts {
 
   static const String iAgreeTo = "I agree to";
   static const String privacyPolicy = "Privacy Policy";
+  static const String termsOfUse = "Terms of Use";
 }
