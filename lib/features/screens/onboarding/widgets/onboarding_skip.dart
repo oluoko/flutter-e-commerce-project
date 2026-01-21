@@ -17,7 +17,7 @@ class OnBoardingSkip extends StatelessWidget {
       top: TDeviceUtils.getAppBarHeight(),
       right: TSizes.defaultSpace,
       child: TextButton(
-        onPressed: () => OnboardingController.instance.skipToLastPage(),
+        onPressed: () => OnboardingController.instance.skipToLoginScreen(),
         child: Text(
           "Skip",
           style: TextStyle(fontSize: 19, fontWeight: FontWeight.w800, color: dark ? Colors.white : TColors.textPrimary),

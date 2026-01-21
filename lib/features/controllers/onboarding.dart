@@ -30,8 +30,7 @@ class OnboardingController extends GetxController {
   }
 
   // Update current index & jump to the last page
-  void skipToLastPage() {
-    currentPageIndex.value = 2;
-    pageController.jumpToPage(2);
+  void skipToLoginScreen() {
+    Get.offAll(const LoginScreen());
   }
 }

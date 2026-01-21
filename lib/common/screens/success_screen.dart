@@ -12,11 +12,12 @@ class SuccessScreen extends StatelessWidget {
     required this.title,
     required this.subTitle,
     this.onPressed,
+    this.altAction,
     this.closeSuccessScreen,
   });
 
   final String image, title, subTitle;
-  final VoidCallback? onPressed, closeSuccessScreen;
+  final VoidCallback? onPressed, altAction, closeSuccessScreen;
 
   @override
   Widget build(BuildContext context) {
@@ -57,7 +58,7 @@ class SuccessScreen extends StatelessWidget {
                 style: Theme.of(context).textTheme.labelMedium,
                 textAlign: TextAlign.center,
               ),
-              const SizedBox(height: TSizes.spaceBtwItems),
+              const SizedBox(height: TSizes.spaceBtwSections),
 
               // Buttons
               SizedBox(

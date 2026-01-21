@@ -24,6 +24,8 @@ class TTexts {
   static const String tFullName = "Full Name";
   static const String tGetStarted = "Get Started";
   static const String tForgetPassword = "Forget Password?";
+  static const String changeYourPasswordTitle= "Password Reset Email Sent";
+  static const String changeYourPasswordSubTitle = "Your account security is our priority! We've sent you a secure link to safely change your password and keep your account protected";
   static const String homeAppbarSubTitle = "Coding With T";
   static const String tSignInWithGoogle = "Sign-In with Google";
   static const String firstName = "First Name";
