@@ -176,7 +176,8 @@ class TTexts {
   // Home
   static const String homeTitle = "Good day for shopping";
   static const String homeSubTitle = "Explore top categories";
-  static const String homeSearchHint = "Search for products";
+  static const String homeSearchHint = "Search for products...";
+  static const String searchPlaceholder = "Search in store...";
 
   static const String iAgreeTo = "I agree to";
   static const String privacyPolicy = "Privacy Policy";
