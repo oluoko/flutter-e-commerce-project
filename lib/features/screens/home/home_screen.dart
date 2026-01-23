@@ -1,6 +1,9 @@
 import 'package:e_store/common/widgets/primary_header_container.dart';
+import 'package:e_store/common/widgets/product_card_vertical.dart';
 import 'package:e_store/common/widgets/search_container.dart';
 import 'package:e_store/common/widgets/section_heading.dart';
+import 'package:e_store/features/screens/home/widgets/promo_slider.dart';
+import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/constants/text_strings.dart';
 import 'package:flutter/material.dart';
@@ -49,11 +52,33 @@ class HomeScreen extends StatelessWidget {
                 ],
               ),
             ),
+
+            // Body
+            Padding(
+              padding: const EdgeInsets.all(TSizes.defaultSpace * 0.7),
+              child: Column(
+                children: [
+                  // Promotional banners slider
+                  const PromoSlider(
+                    banners: [
+                      TImages.promoBanner1,
+                      TImages.promoBanner2,
+                      TImages.promoBanner3,
+                      TImages.promoBanner4,
+                      TImages.promoBanner5,
+                      TImages.promoBanner6,
+                    ],
+                  ),
+                  const SizedBox(height: TSizes.spaceBtwSections,),
+
+                  // Popular products
+                  const ProductCardVertical()
+                ],
+              ),
+            ),
           ],
         ),
       ),
     );
   }
 }
-
-
