@@ -1,3 +1,4 @@
+import 'package:e_store/common/widgets/grid_layout.dart';
 import 'package:e_store/common/widgets/primary_header_container.dart';
 import 'package:e_store/common/widgets/product_card_vertical.dart';
 import 'package:e_store/common/widgets/search_container.dart';
@@ -69,10 +70,10 @@ class HomeScreen extends StatelessWidget {
                       TImages.promoBanner6,
                     ],
                   ),
-                  const SizedBox(height: TSizes.spaceBtwSections,),
+                  const SizedBox(height: TSizes.spaceBtwSections),
 
                   // Popular products
-                  const ProductCardVertical()
+                  GridLayout(itemCount: 6, itemBuilder: (_, index) => const ProductCardVertical()),
                 ],
               ),
             ),
@@ -82,3 +83,5 @@ class HomeScreen extends StatelessWidget {
     );
   }
 }
+
+

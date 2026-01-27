@@ -1,3 +1,4 @@
+import 'package:e_store/common/widgets/product_price_text.dart';
 import 'package:e_store/common/widgets/product_title_text.dart';
 import 'package:e_store/common/widgets/rounded_container.dart';
 import 'package:e_store/common/widgets/rounded_image.dart';
@@ -99,12 +100,7 @@ class ProductCardVertical extends StatelessWidget {
                     mainAxisAlignment: MainAxisAlignment.spaceBetween,
                     children: [
                       // Price
-                      Text(
-                        'Ksh 450',
-                        maxLines: 1,
-                        overflow: TextOverflow.ellipsis,
-                        style: Theme.of(context).textTheme.headlineMedium,
-                      ),
+                      const ProductPriceText(price: "450.00",),
                       Container(
                         decoration: const BoxDecoration(
                           color: TColors.dark,
@@ -134,3 +130,5 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
+
+
