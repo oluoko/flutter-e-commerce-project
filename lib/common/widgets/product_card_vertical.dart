@@ -9,6 +9,7 @@ import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:iconsax/iconsax.dart';
+import 'brand_title_with_verified_icon.dart';
 import 'circular_icon.dart';
 
 class ProductCardVertical extends StatelessWidget {
@@ -29,6 +30,7 @@ class ProductCardVertical extends StatelessWidget {
           color: dark ? TColors.darkerGrey : TColors.white,
         ),
         child: Column(
+          crossAxisAlignment: CrossAxisAlignment.start,
           children: [
             // Thumbnail, Wishlist button, Discount tag
             RoundedContainer(
@@ -82,26 +84,11 @@ class ProductCardVertical extends StatelessWidget {
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
                   ProductTitleText(
-                    title: "Sample product text",
+                    title: "Brown Leather Jacket",
                     smallSize: true,
                   ),
                   SizedBox(height: TSizes.spaceBtwItems / 2),
-                  Row(
-                    children: [
-                      Text(
-                        'Leather jacket',
-                        overflow: TextOverflow.ellipsis,
-                        maxLines: 1,
-                        style: Theme.of(context).textTheme.labelMedium,
-                      ),
-                      const SizedBox(width: TSizes.xs),
-                      const Icon(
-                        Iconsax.verify5,
-                        color: TColors.primary,
-                        size: TSizes.iconXs,
-                      ),
-                    ],
-                  ),
+                  BrandTitleWithVerificationIcon(title: "All Saints"),
                 ],
               ),
             ),

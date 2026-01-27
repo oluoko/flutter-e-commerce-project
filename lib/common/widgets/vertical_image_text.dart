@@ -1,6 +1,5 @@
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/sizes.dart';
-import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 
 class VerticalImageText extends StatelessWidget {
@@ -9,7 +8,7 @@ class VerticalImageText extends StatelessWidget {
     required this.image,
     required this.title,
     this.textColor = TColors.white,
-    this.backgroundColor = TColors.white,
+    this.backgroundColor,
     this.onTap,
   });
 
@@ -20,7 +19,6 @@ class VerticalImageText extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    final dark = THelperFunctions.isDarkMode(context);
     return GestureDetector(
       onTap: onTap,
       child: Padding(
@@ -34,14 +32,14 @@ class VerticalImageText extends StatelessWidget {
               padding: const EdgeInsets.all(TSizes.sm),
               decoration: BoxDecoration(
                 color:
-                    backgroundColor ?? (dark ? TColors.black : TColors.white),
+                    backgroundColor ?? TColors.white,
                 borderRadius: BorderRadius.circular(100),
               ),
               child: Center(
                 child: Image(
                   image: AssetImage(image),
                   fit: BoxFit.cover,
-                  color: dark ? TColors.light : TColors.dark,
+                  color: TColors.dark,
                 ),
               ),
             ),

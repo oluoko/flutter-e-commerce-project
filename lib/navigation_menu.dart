@@ -1,9 +1,13 @@
 import 'package:e_store/features/screens/home/home_screen.dart';
+import 'package:e_store/features/screens/profile/profile_screen.dart';
+import 'package:e_store/features/screens/wishlist/wishlist_screen.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:iconsax/iconsax.dart';
+
+import 'features/screens/store/store_screen.dart';
 
 class NavigationMenu extends StatelessWidget {
   const NavigationMenu({super.key});
@@ -44,8 +48,8 @@ class NavigationController extends GetxController {
 
   final screens = [
     const HomeScreen(),
-    Container(color: Colors.purple),
-    Container(color: Colors.orange),
-    Container(color: Colors.blue),
+    const StoreScreen(),
+    const WishlistScreen(),
+    const ProfileScreen(),
   ];
 }
