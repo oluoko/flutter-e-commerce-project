@@ -65,7 +65,10 @@ class ProductCardVertical extends StatelessWidget {
                   Positioned(
                     top: 0,
                     right: 0,
-                    child: CircularIcon(icon: Iconsax.heart5, color: Colors.red),
+                    child: CircularIcon(
+                      icon: Iconsax.heart5,
+                      color: Colors.red,
+                    ),
                   ),
                 ],
               ),
@@ -78,7 +81,10 @@ class ProductCardVertical extends StatelessWidget {
               child: Column(
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  ProductTitleText(title: "Sample product text", smallSize: true),
+                  ProductTitleText(
+                    title: "Sample product text",
+                    smallSize: true,
+                  ),
                   SizedBox(height: TSizes.spaceBtwItems / 2),
                   Row(
                     children: [
@@ -96,33 +102,40 @@ class ProductCardVertical extends StatelessWidget {
                       ),
                     ],
                   ),
-                  Row(
-                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                    children: [
-                      // Price
-                      const ProductPriceText(price: "450.00",),
-                      Container(
-                        decoration: const BoxDecoration(
-                          color: TColors.dark,
-                          borderRadius: BorderRadius.only(
-                            topLeft: Radius.circular(TSizes.cardRadiusMd),
-                            bottomRight: Radius.circular(
-                              TSizes.productImageRadius,
-                            ),
-                          ),
-                        ),
-                        child: const SizedBox(
-                          width: TSizes.iconLg * 1.2,
-                          height: TSizes.iconLg * 1.2,
-                          child: Center(
-                            child: Icon(Iconsax.add, color: TColors.white),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
                 ],
               ),
+            ),
+
+            Spacer(),
+
+            Row(
+              mainAxisAlignment: MainAxisAlignment.spaceBetween,
+              children: [
+                // Price
+                //Price Text
+                const Padding(
+                  padding: EdgeInsets.only(left: TSizes.sm),
+                  child: ProductPriceText(price: "450.00"),
+                ),
+
+                // Add to cart button
+                Container(
+                  decoration: const BoxDecoration(
+                    color: TColors.dark,
+                    borderRadius: BorderRadius.only(
+                      topLeft: Radius.circular(TSizes.cardRadiusMd),
+                      bottomRight: Radius.circular(TSizes.productImageRadius),
+                    ),
+                  ),
+                  child: const SizedBox(
+                    width: TSizes.iconLg * 1.2,
+                    height: TSizes.iconLg * 1.2,
+                    child: Center(
+                      child: Icon(Iconsax.add, color: TColors.white),
+                    ),
+                  ),
+                ),
+              ],
             ),
           ],
         ),
@@ -130,5 +143,3 @@ class ProductCardVertical extends StatelessWidget {
     );
   }
 }
-
-
