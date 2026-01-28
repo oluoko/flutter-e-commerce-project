@@ -1,15 +1,12 @@
-import 'package:e_store/common/widgets/brand_title_with_verified_icon.dart';
+import 'package:e_store/common/widgets/brand_card.dart';
 import 'package:e_store/common/widgets/cart_counter_icon.dart';
-import 'package:e_store/common/widgets/circular_image.dart';
+import 'package:e_store/common/widgets/category_tab.dart';
 import 'package:e_store/common/widgets/custom_app_bar.dart';
 import 'package:e_store/common/widgets/custom_tab_bar.dart';
 import 'package:e_store/common/widgets/grid_layout.dart';
-import 'package:e_store/common/widgets/rounded_container.dart';
 import 'package:e_store/common/widgets/search_container.dart';
 import 'package:e_store/common/widgets/section_heading.dart';
 import 'package:e_store/utils/constants/colors.dart';
-import 'package:e_store/utils/constants/enums.dart';
-import 'package:e_store/utils/constants/image_strings.dart';
 import 'package:e_store/utils/constants/sizes.dart';
 import 'package:e_store/utils/helpers/helper_functions.dart';
 import 'package:flutter/material.dart';
@@ -25,7 +22,10 @@ class StoreScreen extends StatelessWidget {
       length: 5,
       child: Scaffold(
         appBar: CustomAppBar(
-          title: Text("Store", style: Theme.of(context).textTheme.headlineMedium),
+          title: Text(
+            "Store",
+            style: Theme.of(context).textTheme.headlineMedium,
+          ),
           actions: [
             CartCounterIcon(
               onPressed: () {},
@@ -59,7 +59,10 @@ class StoreScreen extends StatelessWidget {
                       const SizedBox(height: TSizes.spaceBtwSections),
 
                       // Featured Brands
-                      SectionHeading(title: "Featured Brands", onPressed: () {}),
+                      SectionHeading(
+                        title: "Featured Brands",
+                        onPressed: () {},
+                      ),
                       const SizedBox(height: TSizes.spaceBtwItems / 1.5),
 
                       // Brands Grid
@@ -67,51 +70,7 @@ class StoreScreen extends StatelessWidget {
                         itemCount: 4,
                         mainAxisExtent: 80,
                         itemBuilder: (_, index) {
-                          return GestureDetector(
-                            onTap: () {},
-                            child: RoundedContainer(
-                              padding: const EdgeInsets.all(TSizes.sm),
-                              showBorder: true,
-                              backgroundColor: Colors.transparent,
-                              child: Row(
-                                children: [
-                                  Flexible(
-                                    child: CircularImage(
-                                      isNetworkImage: false,
-                                      image: TImages.clothIcon,
-                                      backgroundColor: Colors.transparent,
-                                      overlayColor: dark
-                                          ? TColors.white
-                                          : TColors.black,
-                                    ),
-                                  ),
-                                  const SizedBox(width: TSizes.spaceBtwItems / 2),
-
-                                  // Text
-                                  Expanded(
-                                    child: Column(
-                                      mainAxisSize: MainAxisSize.min,
-                                      crossAxisAlignment:
-                                      CrossAxisAlignment.start,
-                                      children: [
-                                        BrandTitleWithVerificationIcon(
-                                          title: "All Saints",
-                                          brandTextSize: TextSizes.large,
-                                        ),
-                                        Text(
-                                          '231 products',
-                                          overflow: TextOverflow.ellipsis,
-                                          style: Theme.of(
-                                            context,
-                                          ).textTheme.labelMedium,
-                                        ),
-                                      ],
-                                    ),
-                                  ),
-                                ],
-                              ),
-                            ),
-                          );
+                          return BrandCard();
                         },
                       ),
 
@@ -135,7 +94,15 @@ class StoreScreen extends StatelessWidget {
           },
 
           // Body
-          body: Container(),
+          body: TabBarView(
+            children: [
+              CategoryTab(),
+              CategoryTab(),
+              CategoryTab(),
+              CategoryTab(),
+              CategoryTab(),
+            ],
+          ),
         ),
       ),
     );
