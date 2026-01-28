@@ -1,5 +1,4 @@
 import 'package:e_store/common/widgets/brand_title_text.dart';
-import 'package:e_store/common/widgets/product_title_text.dart';
 import 'package:e_store/utils/constants/colors.dart';
 import 'package:e_store/utils/constants/enums.dart';
 import 'package:e_store/utils/constants/sizes.dart';
