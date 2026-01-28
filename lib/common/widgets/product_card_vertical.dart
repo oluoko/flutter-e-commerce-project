@@ -40,7 +40,7 @@ class ProductCardVertical extends StatelessWidget {
                 children: [
                   // Thumbnail Image
                   RoundedImage(
-                    imageUrl: TImages.productImage1,
+                    imageUrl: TImages.productImage13,
                     applyImageRadius: true,
                   ),
 
@@ -79,22 +79,28 @@ class ProductCardVertical extends StatelessWidget {
 
             // Details
             Padding(
-              padding: const EdgeInsets.only(left: TSizes.sm),
-              child: Column(
-                crossAxisAlignment: CrossAxisAlignment.start,
-                children: [
-                  ProductTitleText(
-                    title: "Brown Leather Jacket",
-                    smallSize: true,
-                  ),
-                  SizedBox(height: TSizes.spaceBtwItems / 2),
-                  BrandTitleWithVerificationIcon(title: "All Saints"),
-                ],
+              padding: const EdgeInsets.symmetric(horizontal: TSizes.sm),
+              // Use `SizedBox` here to make the Column full width
+              child: SizedBox(
+                width: double.infinity,
+                child: Column(
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    ProductTitleText(
+                      title: "Brown Leather Jacket",
+                      smallSize: true,
+                    ),
+                    SizedBox(height: TSizes.spaceBtwItems / 2),
+                    BrandTitleWithVerificationIcon(title: "All Saints"),
+                  ],
+                ),
               ),
             ),
 
+            // `Spacer()` keeps the height of each Box same in case of 1 or 2 line of Headings
             Spacer(),
 
+            // Price Row
             Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [
